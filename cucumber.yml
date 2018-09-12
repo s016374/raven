@@ -1,3 +1,4 @@
 default: -p debug
-debug: -t @bond-web
-regress: -t @bond-web --format pretty --format json --out=reports/report.json
+debug: -t @trunk
+regress: -t @trunk --format pretty --format json --out=reports/report.json
+performce: -t @jmeter --format pretty --format json --out=reports/report.json
