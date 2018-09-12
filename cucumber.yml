@@ -1,0 +1,3 @@
+default: -p debug
+debug: -t @bond-web
+regress: -t @bond-web --format pretty --format json --out=reports/report.json
