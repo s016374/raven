@@ -2,7 +2,8 @@ require 'ruby-jmeter'
 
 class RubyJmeter::ExtendedDSL
   def do_with_my_config
-    if ENV['JMETER_IS_RUN'].nil?
+    if ENV['JMETER_PATH'].nil?
+      p 'ninininini'
       jmx(
         file: "jmeter.jmx"
       )
