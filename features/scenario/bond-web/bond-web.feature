@@ -1,7 +1,7 @@
 @trunk
 Feature: bond-web API testing
   Background: mock api
-    # Given launch recall after mocking
+    Given launch recall after mocking
     Given allow real request while mocking
 
   Scenario: function: /bond-web/api/bond/analysis/pdRank/indus
