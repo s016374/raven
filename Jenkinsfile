@@ -1,7 +1,7 @@
 pipeline {
   parameters {
     string(defaultValue: 'registry.innodealing.com', description: 'HARBOR', name: 'HARBOR')
-    string(defaultValue: 'test/raven', description: 'IMAGE_SIDECAR', name: 'IMAGE_SIDECAR')
+    string(defaultValue: 'ruby/raven', description: 'IMAGE_SIDECAR', name: 'IMAGE_SIDECAR')
   }
 
   agent {
@@ -64,6 +64,8 @@ spec:
           value: "1"
         - name: JMETER_LOOPS
           value: "10"
+        - name: FIREMAN_REPORT
+          value: "true"
         resources:
           requests:
             memory: "100Mi"
