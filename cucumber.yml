@@ -1,4 +1,4 @@
-default: -p regress
+default: -p debug
 debug: -t @trunk
 regress: -t @trunk --format pretty --format json --out=reports/report.json
 performce: -t @jmeter --format pretty --format json --out=reports/report.json
