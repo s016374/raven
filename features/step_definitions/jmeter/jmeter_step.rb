@@ -1,5 +1,4 @@
 When(/^jmeter (get|post) '(.*)'$/) do |http_method, api|
-  next unless ENV['IS_MOCK'].nil?
   case
   when api.include?('analysis/pdRank/indus')
     test do
